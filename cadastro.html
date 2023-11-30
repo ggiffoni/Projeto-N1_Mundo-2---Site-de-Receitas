@@ -5,56 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozinha do Giffoni - Cadastro</title>
     <link rel="stylesheet" href="CSS/formatos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        body{
+
+        header{
             background-color: orange;
+            height: 200px;
+            color: black;
+            font-weight: bold;
+            font-size: larger;
+
         }
+
+        main{
+            background-color: orange;
+            height: 720px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            height: 40px;
+        }
+       
     </style>
 
 </head>
 
 <body>
-    
-    <header>
 
-        <div class="menu">
+    <div class="row">
 
-            MENU
-   
-        </div>
+        <header class="col-12 text-left header">
+            &nbsp MENU
+        </header>
 
-
-
-    </header>
+    </div>
 
     <main>
+        
+    <div class="row main">
 
+        <div class="col-8 text-left">
+            
+            <h1>&nbsp EFETUE SEU CADASTRO</h1>
+            <br>
+            <br>
+            <br>
 
+            <form>
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">&nbsp Nome</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="colFormLabel">
+                    </div>
+                </div>
+                  
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">&nbsp Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <label for="inputcep3" class="col-sm-2 col-form-label">&nbsp CEP</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputcep3">
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <label for="inputrua3" class="col-sm-2 col-form-label">&nbsp Rua</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputrua3">
+                    </div>
+                  </div>
+                
+                <div class="row mb-3">
+                    <label for="inputnum3" class="col-sm-2 col-form-label">&nbsp Número</label>
+                    <div class="col-sm-3">
+                      <input type="number" class="form-control" id="inputnum3">
+                    </div>
 
+                    <label for="inputcep3" class="col-sm-2 col-form-label">Complemento</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="inputcep3">
+                    </div>
 
+                </div>    
+                
+                <div class="row mb-3">
+                    <label for="inputcidade3" class="col-sm-2 col-form-label">&nbsp Cidade</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="inputcidade3">
+                    </div>
 
+                    <label for="inputuf3" class="col-sm-2 col-form-label">UF</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="inputuf3">
+                    </div>
 
+                </div>
+                
+                <div class="row-mb-3">
+                    <button type="submit" class="btn btn-primary col-sm-2">Cadastrar</button>
+                </div>
+                
+                
+                
+            </form>
 
+        </div>
 
-
+    </div>
 
     </main>
 
+    <div class="row">
 
+        <footer class="col-12 text center">
 
+            @GGIFFONI 2023
 
+        </footer>
+
+    </div>
 
 </body>
-
-<footer>
-
-    <div class="rodape">
-
-        @GGIFFONI 2023
-    
-    </div>
-    
-</footer>
-
 
 </html>
