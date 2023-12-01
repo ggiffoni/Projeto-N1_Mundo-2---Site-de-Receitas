@@ -39,7 +39,25 @@
     <div class="row">
 
         <header class="col-12 text-left header">
-            &nbsp MENU
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Receitas.html">Receitas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
     </div>
@@ -55,44 +73,44 @@
             <br>
             <br>
 
-            <form>
+            <form action="https://formsubmit.co/ggiffoni@gmail.com" method="POST">
                 <div class="row mb-3">
                     <label for="colFormLabel" class="col-sm-2 col-form-label">&nbsp Nome</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="colFormLabel">
+                      <input type="text" class="form-control" id="colFormLabel" name="Nome" required>
                     </div>
                 </div>
                   
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">&nbsp Email</label>
                   <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3">
+                    <input type="email" class="form-control" id="inputEmail3" name="email" required>
                   </div>
                 </div>
                 
                 <div class="row mb-3">
                   <label for="inputcep3" class="col-sm-2 col-form-label">&nbsp CEP</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="inputcep3">
+                    <input type="text" class="form-control" id="inputcep3" name="CEP" placeholder="11111-111" pattern="[0-9]{5}-[0-9]{3}" required>
                   </div>
                 </div>
                 
                 <div class="row mb-3">
                     <label for="inputrua3" class="col-sm-2 col-form-label">&nbsp Rua</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputrua3">
+                      <input type="text" class="form-control" id="inputrua3" name="Rua" required>
                     </div>
                   </div>
                 
                 <div class="row mb-3">
                     <label for="inputnum3" class="col-sm-2 col-form-label">&nbsp Número</label>
                     <div class="col-sm-3">
-                      <input type="number" class="form-control" id="inputnum3">
+                      <input type="number" class="form-control" id="inputnum3" name="Número" required>
                     </div>
 
                     <label for="inputcep3" class="col-sm-2 col-form-label">Complemento</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" id="inputcep3">
+                        <input type="text" class="form-control" id="inputcep3" name="Complemento">
                     </div>
 
                 </div>    
@@ -100,20 +118,22 @@
                 <div class="row mb-3">
                     <label for="inputcidade3" class="col-sm-2 col-form-label">&nbsp Cidade</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="inputcidade3">
+                      <input type="text" class="form-control" id="inputcidade3" name="Cidade">
                     </div>
 
                     <label for="inputuf3" class="col-sm-2 col-form-label">UF</label>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control" id="inputuf3">
+                        <input type="text" class="form-control" id="inputuf3" name="UF" maxlength="2" minlength="2">
                     </div>
 
                 </div>
                 
                 <div class="row-mb-3">
+                    <label for="inputnum3" class="col-sm-2 col-form-label"></label>
                     <button type="submit" class="btn btn-primary col-sm-2">Cadastrar</button>
                 </div>
                 
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Sucesso.html">
                 
                 
             </form>
